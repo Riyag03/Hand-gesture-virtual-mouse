@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Mouse</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div id="menu">
+        <img class="logo" src="{{ url_for('static', filename='photos/logo.png') }}" alt="Virtual Mouse Logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#functions">Functions</a></li>
+            <li><a href="/virtual_mouse">Virtual Mouse</a></li>
+        </ul>
+    </div>
+
+    <div id="title">
+        <img src="{{ url_for('static', filename='photos/logo2.png') }}" alt="Virtual Mouse Logo">
+       
+
+    </div>
+    <div id="slogan">
+        <h1>Intelligent Virtual Mouse</h1>
+        <p>Discover the intelligent way to control your computer with Virtual mouse</p>
+        <a href="/mouse">Try Demo</a>
+
+        <h1
+            style="font-size: 36px; font-family: Arial, sans-serif; text-align: center; margin-top: 40px;margin-bottom: 0;">
+            Scope & Aim</h1>
+        <div style="display:flex">
+            <div class="panelContent" style="margin-right: 15px; margin-left: 25px;">
+                <h2>Scope</h2>
+                <p>The scope of the AI Virtual Mouse system encompasses a range of functionalities and features to cater
+                    to diverse user needs.</p>
+            </div>
+            <div class="panelContent" style="margin-right: 15px;">
+                <h2>Aim</h2>
+                <p>The aim of the AI Virtual Mouse system is to provide an intuitive and hands-free interaction
+                    mechanism for users, enabling them to control their computing devices using artificial intelligence.</p>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="functions">
+        <h1 style="font-size: 36px; font-family: Arial, sans-serif; text-align: center;">Functions</h1>
+
+        <!-- Function 1: Gesture Recognition -->
+        <div class="function">
+            <div class="functionTextLeft">
+                <h2>Gesture Recognition</h2>
+                <h5>Description</h5>
+                <p>Recognize and interpret hand gestures as input commands.</p>
+                <h5>Purpose</h5>
+                <p>Enables users to control the cursor and perform actions without physical touch or traditional input
+                    devices.</p>
+            </div>
+            <div class="photoDemoPanelRight">
+                <img width="1000" class="photoDemo" src="{{ url_for('static', filename='photos/1.png') }}" alt="Gesture Recognition Demo">
+            </div>
+        </div>
+
+        <!-- Function 2: Cursor Control -->
+        <div class="function">
+            <div class="photoDemoPanelLeft">
+                <img width="400" class="photoDemo" src="{{ url_for('static', filename='photos/4.gif') }}" alt="Cursor Control Demo">
+            </div>
+            <div class="functionTextRight">
+                <h2>Cursor Control</h2>
+                <h5>Description</h5>
+                <p>Allow users to move the cursor on the screen using recognized hand gestures.</p>
+                <h5>Purpose</h5>
+                <p>Provides an alternative to physical mice or touchpads for navigating the user interface.</p>
+            </div>
+        </div>
+
+        <!-- Function 3: Click and Selection -->
+        <div class="function">
+            <div class="functionTextLeft">
+                <h2>Click and Selection</h2>
+                <h5>Description</h5>
+                <p>Simulate mouse clicks and selections based on specific gestures.</p>
+                <h5>Purpose</h5>
+                <p>Enables users to interact with buttons, links, and other interactive elements without the need for
+                    physical clicks.</p>
+            </div>
+            <div class="photoDemoPanelRight">
+                <img width="400" class="photoDemo" src="{{ url_for('static', filename='photos/3.jpg') }}" alt="Click and Selection Demo">
+            </div>
+        </div>
+
+        <!-- Function 4: Scrolling -->
+        <div class="function">
+            <div class="photoDemoPanelLeft">
+                <img width="400" class="photoDemo" src="{{ url_for('static', filename='photos/2.png') }}" alt="Scrolling Demo">
+            </div>
+            <div class="functionTextRight">
+                <h2>Scrolling</h2>
+                <h5>Description</h5>
+                <p>Recognize scrolling gestures to simulate scrolling actions on the screen.</p>
+                <h5>Purpose</h5>
+                <p>Facilitates navigation within documents, web pages, or other scrollable content.</p>
+            </div>
+        </div>
+
+        <!-- Function 5: Drag and Drop -->
+        <div class="function">
+            <div class="functionTextLeft">
+                <h2>Drag and Drop</h2>
+                <h5>Description</h5>
+                <p>Implement gestures to simulate dragging and dropping objects on the screen.</p>
+                <h5>Purpose</h5>
+                <p>Enhances the user's ability to interact with graphical elements and move items within the interface.
+                </p>
+            </div>
+            <div class="photoDemoPanelRight">
+                <img width="400" class="photoDemo" src="{{ url_for('static', filename='photos/5.png') }}" alt="Drag and Drop Demo">
+            </div>
+        </div>
+
+        <!-- Repeat the structure for more functions if needed -->
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Mouse</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div id="menu">
+        <img class="logo" src="{{ url_for('static', filename='photos/logo.png') }}" alt="Virtual Mouse Logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#functions">Functions</a></li>
+            <li><a href="/virtual_mouse">Virtual Mouse</a></li>
+        </ul>
+    </div>
+    <div id="instructions">
+        <h2>Instructions:</h2>
+        <p>1. Allow access to your webcam</p>
+        <p>2. Place your hand in the red box</p>
+        <p>3. Open Your palm to start control</p>
+        <p>4. Do action refer to the shortcuts</p>
+        <p>5. Remove your hand from the camera</p>
+    </div>
+    <div id="title">
+        <img src="{{ url_for('static', filename='photos/logo2.png') }}" alt="Virtual Mouse Logo">
+       
+
+    </div>
+
+    <!-- <div id="step-1">
+        <h2>1. Camera Window Opens:</h2>
+        <p>Launch the application, triggering the camera to open a live feed.</p>
+    </div>
+
+    <div id="step-2">
+        <h2>2. Place Your Hand in Front of the Camera:</h2>
+        <p>Instruct the user to position their hand within the camera's field of view.</p>
+    </div>
+
+    <div id="step-3">
+        <h2>3. Landmarks Appear:</h2>
+        <p>Implement a hand detection algorithm to identify key landmarks on the hand (like fingertips and joints). Display these landmarks on the camera feed.</p>
+    </div>
+
+    <div id="step-4">
+        <h2>4. Control the Mouse Using Hand Gestures:</h2>
+        <p>Enable gesture recognition to interpret hand movements. For example, swiping left or right could move the cursor horizontally, and swiping up or down could control the vertical movement.</p>
+    </div>
+
+    <div id="step-5">
+        <h2>5. Use Index Finger to Move Cursor:</h2>
+        <p>Instruct the user to use their index finger to control the cursor. The cursor should follow the movement of the index finger within the camera frame.</p>
+    </div>
+
+    <div id="step-6">
+        <h2>6. Use Thumb to Click:</h2>
+        <p>Design the system to recognize a specific thumb gesture as a click action. For instance, closing the thumb and index finger could be interpreted as a click.</p>
+    </div>
+
+    <div id="step-7">
+        <h2>7. Initiate Actions:</h2>
+        <p>Define particular hand gestures or combinations that trigger specific actions. For example, a certain gesture might open an application or perform a predefined task.</p>
+    </div>
+
+    <div id="step-8">
+        <h2>8. Close the Windows and Release Objects:</h2>
+        <p>Implement a gesture or button press that signifies the desire to close the application. Upon triggering this, ensure that any virtual objects being manipulated are released.</p>
+    </div> -->
+
+
+    <div id="video">   
+        <img id = "player" src="{{ url_for('video_feed') }}">
+    </div>
+</body>
+</html>
